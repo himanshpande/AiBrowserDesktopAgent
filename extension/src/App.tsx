@@ -5,13 +5,13 @@ declare const chrome: any;
 function App() {
   const [status, setStatus] = useState("");
 
-const highlightPage = () => {
-  chrome.runtime.sendMessage({
-    type: "HIGHLIGHT_PAGE",
-  });
+  const highlightPage = () => {
+    chrome.runtime.sendMessage({
+      type: "HIGHLIGHT_PAGE",
+    });
 
-  setStatus("Message Sent 🚀");
-};
+    setStatus("Message Sent 🚀");
+  };
 
   return (
     <div style={{ width: "320px", padding: "20px" }}>
